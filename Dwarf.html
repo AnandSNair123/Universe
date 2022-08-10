@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe and its mysteries: Dwarf Planets</title>
+    <link rel="stylesheet" type="text/css" href="Dwarf.css">
+</head>
+<body bgcolor="black">
+    <nav>
+    <header>
+        <div class="logo">
+    <h1> Dwarf Planets</h1>
+    <h3><span id="first-name"></span></h3>
+</div>
+
+<div class="menu-bar">
+    <ul>
+        <li><img src="icons/Home.png" name="icon" width="20px">&nbsp;<a href="index.html">Home</a></li>
+        
+        <li class="active"><img src="icons/Planets.png" name="icon" width="20px">&nbsp;<a href="#">Our Solar System</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="SolarSystem.html">The Solar System</a></li>
+                <li><a href="Sun.html">Sun</a></li>
+                <li><a href="Mercury.html">Mercury</a></li>
+                <li><a href="Venus.html">Venus</a></li>
+                <li><a href="Earth.html">Earth</a></li>
+                <li><a href="Mars.html">Mars</a></li>
+                <li><a href="Jupiter.html">Jupiter</a></li>
+                <li><a href="Saturn.html">Saturn</a></li>
+                <li><a href="Uranus.html">Uranus</a></li>
+                <li><a href="Neptune.html">Neptune</a></li>
+                <li class="hover-me"><a href="#">Dwarf Planets<img src="icons/expand.png" name="icon" width="20px"></a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Dwarf.html">Dwarf Planet</a></li>
+                        <li><a href="Pluto.html">Pluto</a></li>
+                        <li><a href="Ceres.html">Ceres</a></li>
+                        <li><a href="Eris.html">Eris</a></li>
+                    </ul>
+                </div>
+                </li>
+                
+            </li>
+            
+            </ul>
+        </li>
+        <li><img src="icons/galaxy.png" name="icon" width="20px">&nbsp;<a href="#">Galaxies</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="MilkyWay.html">Milky Way</a></li>
+                    <li><a href="Andromeda.html">Andromeda</a></li>
+                    <li><a href="M32.html">M32</a></li>
+                </ul>
+            </li>
+            <li id="tis"><a href="#">Space Telescopes</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Hubble.html">Hubble Space Telescope</a></li>
+                        <li><a href="James.html">James Webb Space Telescope</a></li>
+                    </ul>
+                </li>
+                <li id="lis"><a href="#">Discoveries</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="BlackHole.html">Black Hole</a></li>
+                            <li><a href="LHC.html">Large Hadron Collider</a></li>
+                            <li><a href="Water.html">Water on the moon</a></li>
+                            <li><a href="BBT.html">Big Bang Theory</a></li>
+                        </ul>
+                </li>
+                <li id="dis"><img src="icons/Login.png" name="icon" width="20px" id="dis">&nbsp;<a href="Login.html">Login / Register</a></li>
+            <li id="fis"><img src="icons/Login.png" name="icon" width="20px" id="dis">&nbsp;<a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+</div>
+
+
+
+</nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<main>
+    <h2>
+       Dwarf Planets
+    </h2>
+    <p>
+        A dwarf planet is a small planetary-mass object that is in direct orbit of the Sun, smaller than any of the eight classical planets but still a world in its own right. The prototypical dwarf planet is Pluto. The interest of dwarf planets to planetary geologists is that since they are possibly differentiated and geologically active bodies, they may display planetary geology, an expectation that was borne out by the Dawn mission to Ceres and the New Horizons mission to Pluto in 2015. Counts of the number of dwarf planets among known bodies of the Solar System range from 5-and-counting (the IAU) to over 120 (Runyon et al). Apart from Sedna, the largest ten of these candidates have either been visited by spacecraft (Pluto and Ceres) or have at least one known moon (Pluto, Eris, Haumea, Makemake, Gonggong, Quaoar, Orcus, and Salacia), which allows their masses and thus an estimate of their densities to be determined.
+        <br><br> Mass and density in turn can be fit into geophysical models in an attempt to determine the nature of these worlds. The term dwarf planet was coined by planetary scientist Alan Stern as part of a three-way categorization of planetary-mass objects in the Solar System: classical planets, dwarf planets and satellite planets. Dwarf planets were thus conceived of as a category of planet. However, in 2006 the concept was adopted by the International Astronomical Union (IAU) as a category of sub-planetary objects, part of a three-way recategorization of bodies orbiting the Sun: planets, dwarf planets and small Solar System bodies. Thus Stern and other planetary geologists consider dwarf planets and satellite planets to be planets, but since 2006 the IAU and perhaps the majority of astronomers have excluded them from the roster of planets.
+
+<br><br><br>
+
+    </p>
+    
+</main>
+<footer>
+</footer>
+
+<script>
+    var firstName = localStorage.getItem('first-name');
+    var ID = document.getElementById("dis");
+    var ID2 = document.getElementById("fis");
+
+     if(firstName!==null){
+       ID.style.display = "none";
+       ID2.style.display = "block";
+       document.getElementById('first-name').textContent = "Name :"+firstName;
+    }
+    function logout(){
+        localStorage.clear();
+        document.location.reload();      
+    }
+    
+
+    //The following lines are to clear the local storage.
+    if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+  localStorage.clear();
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe and its mysteries: Water on the moon</title>
+    <link rel="stylesheet" type="text/css" href="Water.css">
+</head>
+<body bgcolor="black">
+    <nav>
+    <header>
+        <div class="logo">
+    <h1> Water on the moon</h1>
+    <h3><span id="first-name"></span></h3>
+</div>
+
+<div class="menu-bar">
+    <ul>
+        <li><img src="icons/Home.png" name="icon" width="20px">&nbsp;<a href="index.html">Home</a></li>
+        
+        <li><img src="icons/Planets.png" name="icon" width="20px">&nbsp;<a href="#">Our Solar System</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="SolarSystem.html">The Solar System</a></li>
+                <li><a href="Sun.html">Sun</a></li>
+                <li><a href="Mercury.html">Mercury</a></li>
+                <li><a href="Venus.html">Venus</a></li>
+                <li><a href="Earth.html">Earth</a></li>
+                <li><a href="Mars.html">Mars</a></li>
+                <li><a href="Jupiter.html">Jupiter</a></li>
+                <li><a href="Saturn.html">Saturn</a></li>
+                <li><a href="Uranus.html">Uranus</a></li>
+                <li><a href="Neptune.html">Neptune</a></li>
+                <li class="hover-me"><a href="#">Dwarf Planets<img src="icons/expand.png" name="icon" width="20px"></a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Dwarf.html">Dwarf Planet</a></li>
+                        <li><a href="Pluto.html">Pluto</a></li>
+                        <li><a href="Ceres.html">Ceres</a></li>
+                        <li><a href="Eris.html">Eris</a></li>
+                    </ul>
+                </div>
+                </li>
+                
+            </li>
+            
+            </ul>
+        </li>
+        <li><img src="icons/galaxy.png" name="icon" width="20px">&nbsp;<a href="#">Galaxies</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="MilkyWay.html">Milky Way</a></li>
+                    <li><a href="Andromeda.html">Andromeda</a></li>
+                    <li><a href="M32.html">M32</a></li>
+                </ul>
+            </li>
+            <li id="tis"><a href="#">Space Telescopes</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Hubble.html">Hubble Space Telescope</a></li>
+                        <li><a href="James.html">James Webb Space Telescope</a></li>
+                    </ul>
+                </li>
+                <li id="lis" class="active"><a href="#">Discoveries</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="BlackHole.html">Black Hole</a></li>
+                            <li><a href="LHC.html">Large Hadron Collider</a></li>
+                            <li><a href="Water.html">Water on the moon</a></li>
+                            <li><a href="BBT.html">Big Bang Theory</a></li>
+                        </ul>
+                </li>
+                <li id="dis"><img src="icons/Login.png" name="icon" width="20px" id="dis">&nbsp;<a href="Login.html">Login / Register</a></li>
+            <li id="fis"><img src="icons/Login.png" name="icon" width="20px" id="dis">&nbsp;<a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+</div>
+
+
+
+</nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<main>
+    <h2>
+       Water on the moon
+    </h2>
+    <img src="planets/Water.png" width="600px"><br>
+    <p>
+        Lunar water is water that is present on the Moon. Diffuse water molecules can persist at the Moon's sunlit surface, as discovered by NASA's SOFIA observatory in 2020. Gradually water vapor is decomposed by sunlight, leaving hydrogen and oxygen lost to outer space. Scientists have found water ice in the cold, permanently shadowed craters at the Moon's poles.[citation needed] Water molecules are also present in the extremely thin lunar atmosphere.<br><br>
+
+Water (H2O), and the chemically related hydroxyl group (-OH), exist in forms chemically bound as hydrates and hydroxides to lunar minerals (rather than free water), and evidence strongly suggests that this is the case in low concentrations as for much of the Moon's surface. In fact, of surface matter, adsorbed water is calculated to exist at trace concentrations of 10 to 1000 parts per million. Inconclusive evidence of free water ice at the lunar poles had accumulated during the second half of the 20th century from a variety of observations suggesting the presence of bound hydrogen.<br><br>
+
+On 18 August 1976, the Soviet Luna 24 probe landed at Mare Crisium, took samples from the depths of 118, 143, and 184 cm of the lunar regolith, and then took them to Earth. In February 1978, it was published that laboratory analysis of these samples shown they contained 0.1% water by mass. Spectral measurements shown minima near 3, 5, and 6 µm, distinctive valence-vibration bands for water molecules, with intensities two or three times larger than the noise level.<br><br>
+
+On 24 September 2009, it was reported that the NASA's Moon Mineralogy Mapper (M3) spectrometer onboard India's Chandrayaan-1 probe had detected absorption features near 2.8–3.0 μm on the surface of the Moon. On 14 November 2008, India released the Moon Impact Probe onboard Chandrayaan-1 orbiter to impact into the Shackleton crater which helped confirm the presence of water ice. For silicate bodies, such features are typically attributed to hydroxyl- and/or water-bearing materials. In August 2018, NASA confirmed that M3 showed water ice is present on the surface at the Moon poles. Water was confirmed to be on the sunlit surface of the Moon by NASA on October 26, 2020.<br><br>
+
+Water may have been delivered to the Moon over geological timescales by the regular bombardment of water-bearing comets, asteroids, and meteoroids or continuously produced in situ by the hydrogen ions (protons) of the solar wind impacting oxygen-bearing minerals.<br><br>
+
+The search for the presence of lunar water has attracted considerable attention and motivated several recent lunar missions, largely because of water's usefulness in rendering long-term lunar habitation feasible.
+<br><br><br>
+
+    </p>
+    
+</main>
+<footer>
+</footer>
+
+<script>
+    var firstName = localStorage.getItem('first-name');
+    var ID = document.getElementById("dis");
+    var ID2 = document.getElementById("fis");
+
+     if(firstName!==null){
+       ID.style.display = "none";
+       ID2.style.display = "block";
+       document.getElementById('first-name').textContent = "Name :"+firstName;
+    }
+    function logout(){
+        localStorage.clear();
+        document.location.reload();      
+    }
+    
+
+    //The following lines are to clear the local storage.
+    if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+  localStorage.clear();
+}
+
+
+</script>
+</body>
+</html>

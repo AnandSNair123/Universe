@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe and its mysteries: Uranus</title>
+    <link rel="stylesheet" type="text/css" href="Uranus.css">
+</head>
+<body bgcolor="black">
+    <nav>
+    <header>
+        <div class="logo">
+    <h1> Uranus
+    </h1>
+    <h3><span id="first-name"></span></h3>
+</div>
+
+<div class="menu-bar">
+    <ul>
+        <li><img src="icons/Home.png" name="icon" width="20px">&nbsp;<a href="index.html">Home</a></li>
+        
+        <li class="active"><img src="icons/Planets.png" name="icon" width="20px">&nbsp;<a href="#">Our Solar System</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="SolarSystem.html">The Solar System</a></li>
+                <li><a href="Sun.html">Sun</a></li>
+                <li><a href="Mercury.html">Mercury</a></li>
+                <li><a href="Venus.html">Venus</a></li>
+                <li><a href="Earth.html">Earth</a></li>
+                <li><a href="Mars.html">Mars</a></li>
+                <li><a href="Jupiter.html">Jupiter</a></li>
+                <li><a href="Saturn.html">Saturn</a></li>
+                <li><a href="Uranus.html">Uranus</a></li>
+                <li><a href="Neptune.html">Neptune</a></li>
+                <li class="hover-me"><a href="#">Dwarf Planets<img src="icons/expand.png" name="icon" width="20px"></a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Dwarf.html">Dwarf Planet</a></li>
+                        <li><a href="Pluto.html">Pluto</a></li>
+                        <li><a href="Ceres.html">Ceres</a></li>
+                        <li><a href="Eris.html">Eris</a></li>
+                    </ul>
+                </div>
+                </li>
+                
+            </li>
+            
+            </ul>
+        </li>
+        <li><img src="icons/galaxy.png" name="icon" width="20px">&nbsp;<a href="#">Galaxies</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="MilkyWay.html">Milky Way</a></li>
+                    <li><a href="Andromeda.html">Andromeda</a></li>
+                    <li><a href="M32.html">M32</a></li>
+                </ul>
+            </li>
+            <li id="tis"><a href="#">Space Telescopes</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Hubble.html">Hubble Space Telescope</a></li>
+                        <li><a href="James.html">James Webb Space Telescope</a></li>
+                    </ul>
+                </li>
+                <li id="lis"><a href="#">Discoveries</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="BlackHole.html">Black Hole</a></li>
+                            <li><a href="LHC.html">Large Hadron Collider</a></li>
+                            <li><a href="Water.html">Water on the moon</a></li>
+                            <li><a href="BBT.html">Big Bang Theory</a></li>
+                        </ul>
+                </li>
+                <li id="dis"><img src="icons/Login.png" name="icon" width="20px" id="dis">&nbsp;<a href="Login.html">Login / Register</a></li>
+            <li id="fis"><img src="icons/Login.png" name="icon" width="20px" id="dis">&nbsp;<a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+</div>
+
+
+
+</nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<main>
+    <h2>
+       Uranus
+    </h2>
+    <img src="planets/Uranus.gif" width="600px"><br>
+    <p>
+        Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares (Mars), grandfather of Zeus (Jupiter) and father of Cronus (Saturn). It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is similar in composition to Neptune, and both have bulk chemical compositions which differ from that of the larger gas giants Jupiter and Saturn. For this reason, scientists often classify Uranus and Neptune as "ice giants" to distinguish them from the other giant planets. As with gas giants, ice giants also lack a well defined "solid surface." Uranus's atmosphere is similar to Jupiter's and Saturn's in its primary composition of hydrogen and helium, but it contains more "ices" such as water, ammonia, and methane, along with traces of other hydrocarbons. <br><br> It has the coldest planetary atmosphere in the Solar System, with a minimum temperature of 49 K (−224 °C; −371 °F), and has a complex, layered cloud structure with water thought to make up the lowest clouds and methane the uppermost layer of clouds. The interior of Uranus is mainly composed of ices and rock. Like the other giant planets, Uranus has a ring system, a magnetosphere, and numerous moons. The Uranian system has a unique configuration because its axis of rotation is tilted sideways, nearly into the plane of its solar orbit. Its north and south poles, therefore, lie where most other planets have their equators. In 1986, images from Voyager 2 showed Uranus as an almost featureless planet in visible light, without the cloud bands or storms associated with the other giant planets. Voyager 2 remains the only spacecraft to visit the planet. Observations from Earth have shown seasonal change and increased weather activity as Uranus approached its equinox in 2007. Wind speeds can reach 250 metres per second (900 km/h; 560 mph).
+
+<br><br><br>
+
+    </p>
+    
+</main>
+<footer>
+</footer>
+
+<script>
+    var firstName = localStorage.getItem('first-name');
+    var ID = document.getElementById("dis");
+    var ID2 = document.getElementById("fis");
+
+     if(firstName!==null){
+       ID.style.display = "none";
+       ID2.style.display = "block";
+       document.getElementById('first-name').textContent = "Name :"+firstName;
+    }
+    function logout(){
+        localStorage.clear();
+        document.location.reload();      
+    }
+    
+
+    //The following lines are to clear the local storage.
+    if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+  localStorage.clear();
+}
+
+
+</script>
+</body>
+</html>

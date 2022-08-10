@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe and its mysteries: Earth</title>
+    <link rel="stylesheet" type="text/css" href="Sun.css">
+</head>
+<body bgcolor="black">
+    <nav>
+    <header>
+        <div class="logo">
+    <h1> Earth</h1>
+    <h3><span id="first-name"></span></h3>
+</div>
+
+<div class="menu-bar">
+    <ul>
+        <li><img src="icons/Home.png" name="icon" width="20px">&nbsp;<a href="index.html">Home</a></li>
+        
+        <li class="active"><img src="icons/Planets.png" name="icon" width="20px">&nbsp;<a href="#">Our Solar System</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="SolarSystem.html">The Solar System</a></li>
+                <li><a href="Sun.html">Sun</a></li>
+                <li><a href="Mercury.html">Mercury</a></li>
+                <li><a href="Venus.html">Venus</a></li>
+                <li><a href="Earth.html">Earth</a></li>
+                <li><a href="Mars.html">Mars</a></li>
+                <li><a href="Jupiter.html">Jupiter</a></li>
+                <li><a href="Saturn.html">Saturn</a></li>
+                <li><a href="Uranus.html">Uranus</a></li>
+                <li><a href="Neptune.html">Neptune</a></li>
+                <li class="hover-me"><a href="#">Dwarf Planets<img src="icons/expand.png" name="icon" width="20px"></a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Dwarf.html">Dwarf Planet</a></li>
+                        <li><a href="Pluto.html">Pluto</a></li>
+                        <li><a href="Ceres.html">Ceres</a></li>
+                        <li><a href="Eris.html">Eris</a></li>
+                    </ul>
+                </div>
+                </li>
+                
+            </li>
+            
+            </ul>
+        </li>
+        <li><img src="icons/galaxy.png" name="icon" width="20px">&nbsp;<a href="#">Galaxies</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="MilkyWay.html">Milky Way</a></li>
+                    <li><a href="Andromeda.html">Andromeda</a></li>
+                    <li><a href="M32.html">M32</a></li>
+                </ul>
+            </li>
+            <li id="tis"><a href="#">Space Telescopes</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Hubble.html">Hubble Space Telescope</a></li>
+                        <li><a href="James.html">James Webb Space Telescope</a></li>
+                    </ul>
+                </li>
+                <li id="lis"><a href="#">Discoveries</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="BlackHole.html">Black Hole</a></li>
+                            <li><a href="LHC.html">Large Hadron Collider</a></li>
+                            <li><a href="Water.html">Water on the moon</a></li>
+                            <li><a href="BBT.html">Big Bang Theory</a></li>
+                        </ul>
+                </li>
+                <li id="dis"><img src="icons/Login.png" name="icon" width="20px" id="dis">&nbsp;<a href="Login.html">Login / Register</a></li>
+            <li id="fis"><img src="icons/Login.png" name="icon" width="20px" id="dis">&nbsp;<a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+</div>
+
+
+
+</nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<main>
+    <h2>
+       Earth
+    </h2>
+    <img src="planets/Earth.gif" width="600px"><br>
+    <p>
+        
+        Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water. About 71% of Earth's surface is made up of the ocean, dwarfing Earth's polar ice, lakes, and rivers. The remaining 29% of Earth's surface is land, consisting of continents and islands. Earth's surface layer is formed of several slowly moving tectonic plates, interacting to produce mountain ranges, volcanoes, and earthquakes. Earth's liquid outer core generates the magnetic field that shapes Earth's magnetosphere, deflecting destructive solar winds.<br><br>
+Earth's atmosphere consists mostly of nitrogen and oxygen. More solar energy is received by tropical regions than polar regions and is redistributed by atmospheric and ocean circulation. Water vapor is widely present in the atmosphere and forms clouds that cover most of the planet. Greenhouse gases in the atmosphere like carbon dioxide (CO2) trap a part of the energy from the Sun close to the surface. A region's climate is governed by latitude, but also by elevation and proximity to moderating oceans. Severe weather, such as tropical cyclones, thunderstorms, and heatwaves, occurs in most areas and greatly impacts life. <br><br>
+Earth is orbited by one permanent natural satellite, the Moon, which orbits Earth at 380,000 km (1.3 light seconds) and is roughly a quarter as wide as Earth. The Moon always faces the Earth with the same side through tidal locking and causes tides, stabilizes Earth's axis, and gradually slows its rotation.
+
+<br><br><br>
+
+    </p>
+    
+</main>
+<footer>
+</footer>
+
+<script>
+    var firstName = localStorage.getItem('first-name');
+    var ID = document.getElementById("dis");
+    var ID2 = document.getElementById("fis");
+
+     if(firstName!==null){
+       ID.style.display = "none";
+       ID2.style.display = "block";
+       document.getElementById('first-name').textContent = "Name :"+firstName;
+    }
+    function logout(){
+        localStorage.clear();
+        document.location.reload();      
+    }
+    
+
+    //The following lines are to clear the local storage.
+    if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+  localStorage.clear();
+}
+
+
+</script>
+</body>
+</html>

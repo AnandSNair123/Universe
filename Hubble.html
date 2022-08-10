@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe and its mysteries: Hubble Space Telescope</title>
+    <link rel="stylesheet" type="text/css" href="Hubble.css">
+</head>
+<body bgcolor="black">
+    <nav>
+    <header>
+        <div class="logo">
+    <h1> Hubble Space Telescope</h1>
+    <h3><span id="first-name"></span></h3>
+</div>
+
+<div class="menu-bar">
+    <ul>
+        <li><img src="icons/Home.png" name="icon" width="20px">&nbsp;<a href="index.html">Home</a></li>
+        
+        <li ><img src="icons/Planets.png" name="icon" width="20px">&nbsp;<a href="#">Our Solar System</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="SolarSystem.html">The Solar System</a></li>
+                <li><a href="Sun.html">Sun</a></li>
+                <li><a href="Mercury.html">Mercury</a></li>
+                <li><a href="Venus.html">Venus</a></li>
+                <li><a href="Earth.html">Earth</a></li>
+                <li><a href="Mars.html">Mars</a></li>
+                <li><a href="Jupiter.html">Jupiter</a></li>
+                <li><a href="Saturn.html">Saturn</a></li>
+                <li><a href="Uranus.html">Uranus</a></li>
+                <li><a href="Neptune.html">Neptune</a></li>
+                <li class="hover-me"><a href="#">Dwarf Planets<img src="icons/expand.png" name="icon" width="20px"></a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Dwarf.html">Dwarf Planet</a></li>
+                        <li><a href="Pluto.html">Pluto</a></li>
+                        <li><a href="Ceres.html">Ceres</a></li>
+                        <li><a href="Eris.html">Eris</a></li>
+                    </ul>
+                </div>
+                </li>
+                
+            </li>
+            
+            </ul>
+        </li>
+        <li><img src="icons/galaxy.png" name="icon" width="20px">&nbsp;<a href="#">Galaxies</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="MilkyWay.html">Milky Way</a></li>
+                    <li><a href="Andromeda.html">Andromeda</a></li>
+                    <li><a href="M32.html">M32</a></li>
+                </ul>
+            </li>
+        <li id="tis" class="active"><a href="#">Space Telescopes</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="Hubble.html">Hubble Space Telescope</a></li>
+                    <li><a href="James.html">James Webb Space Telescope</a></li>
+                </ul>
+            </li>
+            <li id="lis"><a href="#">Discoveries</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="BlackHole.html">Black Hole</a></li>
+                        <li><a href="LHC.html">Large Hadron Collider</a></li>
+                        <li><a href="Water.html">Water on the moon</a></li>
+                        <li><a href="BBT.html">Big Bang Theory</a></li>
+                    </ul>
+            </li>
+            <li id="dis"><img src="icons/Login.png" name="icon" width="20px" id="dis">&nbsp;<a href="Login.html">Login / Register</a></li>
+        <li id="fis"><img src="icons/Login.png" name="icon" width="20px" id="dis">&nbsp;<a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+</div>
+
+
+
+</nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<main>
+    <h2>
+    
+       Hubble Space Telescope
+    </h2>
+    <img src="planets/Hubble.jpg" width="600px"><br>
+    <p>
+        
+        The Hubble Space Telescope (often referred to as HST or Hubble) is a space telescope that was launched into low Earth orbit in 1990 and remains in operation. It was not the first space telescope, but it is one of the largest and most versatile, renowned both as a vital research tool and as a public relations boon for astronomy. The Hubble telescope is named after astronomer Edwin Hubble and is one of NASA's Great Observatories. The Space Telescope Science Institute (STScI) selects Hubble's targets and processes the resulting data, while the Goddard Space Flight Center (GSFC) controls the spacecraft.<br><br>
+
+Hubble features a 2.4 m (7 ft 10 in) mirror, and its five main instruments observe in the ultraviolet, visible, and near-infrared regions of the electromagnetic spectrum. Hubble's orbit outside the distortion of Earth's atmosphere allows it to capture extremely high-resolution images with substantially lower background light than ground-based telescopes. It has recorded some of the most detailed visible light images, allowing a deep view into space. Many Hubble observations have led to breakthroughs in astrophysics, such as determining the rate of expansion of the universe.<br><br>
+
+Space telescopes were proposed as early as 1923, and the Hubble telescope was funded and built in the 1970s by the United States space agency NASA with contributions from the European Space Agency. Its intended launch was 1983, but the project was beset by technical delays, budget problems, and the 1986 Challenger disaster. Hubble was finally launched in 1990, but its main mirror had been ground incorrectly, resulting in spherical aberration that compromised the telescope's capabilities. The optics were corrected to their intended quality by a servicing mission in 1993.<br><br>
+
+Hubble is the only telescope designed to be maintained in space by astronauts. Five Space Shuttle missions have repaired, upgraded, and replaced systems on the telescope, including all five of the main instruments. The fifth mission was initially canceled on safety grounds following the Columbia disaster (2003), but after NASA administrator Michael D. Griffin approved it, it was completed in 2009. The telescope completed 30 years of operation in April 2020 and is predicted to last until 2030–2040.<br><br>
+
+Hubble forms the visible light component of NASA's Great Observatories program, along with the Compton Gamma Ray Observatory, the Chandra X-ray Observatory, and the Spitzer Space Telescope (which covers the infrared bands). The mid-IR-to-visible band successor to the Hubble telescope is the James Webb Space Telescope (JWST), which was launched on 25 December 2021.
+<br><br><br>
+
+    </p>
+    
+</main>
+<footer>
+</footer>
+
+<script>
+    var firstName = localStorage.getItem('first-name');
+    var ID = document.getElementById("dis");
+    var ID2 = document.getElementById("fis");
+
+     if(firstName!==null){
+       ID.style.display = "none";
+       ID2.style.display = "block";
+       document.getElementById('first-name').textContent = "Name :"+firstName;
+    }
+    function logout(){
+        localStorage.clear();
+        document.location.reload();      
+    }
+    
+
+    //The following lines are to clear the local storage.
+    if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+  localStorage.clear();
+}
+
+
+</script>
+</body>
+</html>

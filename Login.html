@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="Login.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onClick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onClick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="icons/fb.png"> 
+                <img src="icons/tw.png"> 
+                <img src="icons/gp.png"> 
+                
+            </div>
+            <form id="form" class="input-group" action="index.html">
+                <input type="text" class="input-field" placeholder="User Id" required id="firstName">
+                <input type="password" class="input-field" placeholder="Enter Password" required >
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="register" class="input-group" action="Login.html">
+                <input type="text" class="input-field" placeholder="User Id" required id="firstName2">
+                <input type="email" class="input-field" placeholder="Email Id" required> 
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to T&C</span>
+                <button type="submit" class="submit-btn" onClick="loggedIn()">Register</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        const x = document.getElementById("form");
+        const y = document.getElementById("register");
+        const z = document.getElementById("btn");
+        const firstName= document.getElementById("firstName");
+        const firstName2= document.getElementById("firstName2");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+
+        function loggedIn(){
+            alert("You have successfully registered to our website. Please login now.")
+        }
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+
+            const firstNameValue = firstName.value;
+
+            localStorage.setItem('first-name',firstNameValue);
+            
+            window.location.href="SolarSystem.html";
+            window.location.href="Sun.html";
+            window.location.href="Mercury.html";
+            window.location.href="Venus.html";
+            window.location.href="Earth.html";
+            window.location.href="Mars.html";
+            window.location.href="Jupiter.html";
+            window.location.href="Saturn.html";
+            window.location.href="Uranus.html";
+            window.location.href="Neptune.html";
+            window.location.href="Andromeda.html";
+            window.location.href="M32.html";
+            window.location.href="MilkyWay.html";
+            window.location.href="Hubble.html";
+            window.location.href="James.html";
+            window.location.href="Dwarf.html";
+            window.location.href="Ceres.html";
+            window.location.href="Pluto.html";
+            window.location.href="Eris.html";
+            window.location.href="BBT.html";
+            window.location.href="LHC.html";
+            window.location.href="Water.html";
+            window.location.href="BlackHole.html";
+            window.location.href="index.html";
+            
+            alert("Logged in successfully . Welcome "+firstNameValue);
+        })
+
+
+    </script>
+</body>
+</html>
